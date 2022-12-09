@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golf Game</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: green;
+        }
+        #game {
+            text-align: center;
+            font-size: 26px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Golf Game</h1>
+    <div id="game">
+        <h2>Instructions:</h2>
+        <p>Your goal is to get the ball into the hole in as few shots as possible. Click on the ball to hit it with your club. The power of your hit is determined by how far away you click from the ball. Good luck!</p>
+        <div id="field">
+            <img id="ball" src="ball.png" onclick="hitBall()" />
+            <img id="hole" src="hole.png" />
+        </div>
+        <script>
+            let shots = 0;
+            function hitBall()
